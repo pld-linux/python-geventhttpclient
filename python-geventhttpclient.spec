@@ -2,7 +2,7 @@
 # Conditional build:
 %bcond_with	tests	# py.test tests [use network]
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module
 
 %define 	module	geventhttpclient
 Summary:	A high performance, concurrent HTTP client library
@@ -10,7 +10,7 @@ Summary(pl.UTF-8):	Biblioteka bardzo wydajnego, wielowątkowego klienta HTTP
 Name:		python-%{module}
 # keep 1.x here for python2 support
 Version:	1.5.5
-Release:	3
+Release:	4
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/geventhttpclient/
